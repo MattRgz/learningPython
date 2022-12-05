@@ -122,6 +122,7 @@ class Cliente(Persona):
 
         
 def cargar():
+    personas = []
     respuesta = input('Desea agregar un empleado?: ')
     nombre = input('Ingrese el Nombre: ')
     apellido = input('Ingrese el Apellido: ')
