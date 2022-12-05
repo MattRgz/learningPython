@@ -122,7 +122,6 @@ class Cliente(Persona):
 
         
 def cargar():
-    personas = []
     respuesta = input('Desea agregar un empleado?: ')
     nombre = input('Ingrese el Nombre: ')
     apellido = input('Ingrese el Apellido: ')
@@ -131,11 +130,11 @@ def cargar():
     if respuesta == 'si' or respuesta == 'Si' or respuesta == "SI" or respuesta == "sI":
         salario = input('Ingrese el salario correspondiente: ')
         emp = Empleado(nombre,apellido,rut,telefono,salario)
-        personas.append(emp)
+        return personas.append(emp)
     else:
         categoria = input('Ingrese la categoria del cliente: ')
         cli = Cliente(nombre,apellido,rut,telefono,categoria)
-        personas.append(cli)
+        return personas.append(cli)
 
 personas = []
 cargar()
